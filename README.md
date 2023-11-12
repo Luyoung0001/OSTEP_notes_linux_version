@@ -1,0 +1,2 @@
+# OSTEP_notes_linux_version
+Linux_Version
