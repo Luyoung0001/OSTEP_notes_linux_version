@@ -89,7 +89,7 @@ int main() {
     pthread_join(p_r3, NULL);
     pthread_join(p_r4, NULL);
     pthread_join(p_r5, NULL);
-    
+
     pthread_join(p_w1, NULL);
     pthread_join(p_w2, NULL);
     pthread_join(p_w3, NULL);
@@ -98,9 +98,6 @@ int main() {
 
     sem_close(&rwlock.lock);
     sem_close(&rwlock.writelock);
-
-    sem_unlink("rw_lock");
-    sem_unlink("rw_writelock");
 
     return 0;
 }
