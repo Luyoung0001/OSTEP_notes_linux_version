@@ -69,8 +69,6 @@ int main(){
     int i4 = 4;
     pthread_create(&p[4],NULL,eat,&i4);
 
-
-
     for(int i = 0; i < 5; i++){
         pthread_join(p[i],NULL);
         sem_close(&forks[i]);
